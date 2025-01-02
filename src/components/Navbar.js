@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +25,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Rotating Logo */}
         <div className="text-2xl font-bold cursor-pointer flex items-center space-x-1">
+          <Link href="/">
           <span className="animate-vertical-spin-j">J</span>
           <span className="animate-vertical-spin-s">S</span>
           <span className="text-accent-yellow">.</span>
+          </Link>
         </div>
 
         {/* Desktop Menu */}

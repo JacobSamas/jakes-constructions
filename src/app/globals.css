@@ -6,3 +6,33 @@
 body {
   @apply bg-background-light text-gray-900 font-sans;
 }
+
+@keyframes vertical-spin-j {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes vertical-spin-s {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+.animate-vertical-spin-j {
+  animation: vertical-spin-j 3s linear infinite;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.animate-vertical-spin-s {
+  animation: vertical-spin-s 3s linear infinite;
+  display: inline-block;
+  font-size: 2rem;
+}

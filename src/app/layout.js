@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "Jake's Constructions",
@@ -9,9 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-background-light text-gray-900">
-        <main>{children}</main>
+        <Navbar />
+        <main className="pt-16">{children}</main>
       </body>
     </html>
   );
 }
-
